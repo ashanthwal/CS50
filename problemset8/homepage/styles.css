@@ -1,0 +1,226 @@
+body,
+html {
+  height: 100%;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 480px) {
+  .text-fields {
+    grid-template-areas:
+      "name"
+      "subject"
+      "email"
+      "phone"
+      "message";
+  }
+}
+/*utilies*/
+
+.container {
+  max-width: 70%;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+.container-2 {
+  max-width: 100%;
+  padding: 5rem;
+  margin-bottom: 5rem;
+  padding-bottom: 15rem;
+  background: #e5eec6;
+}
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+btn-dark {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04aa6d;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+.pb-9 {
+  padding-bottom: 100px;
+}
+/*Margin*/
+
+.my-1 {
+  padding: 1rem 0;
+}
+
+.my-2 {
+  padding: 2rem 0;
+}
+
+.my-3 {
+  padding: 3rem 0;
+}
+
+.my-4 {
+  padding: 4rem 0;
+}
+
+.mt-9 {
+  margin-top: 150px;
+}
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: rgb(226, 226, 20);
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+image {
+  width: 100%;
+}
+
+/* Hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/hero.jpg");
+
+  /* Set a specific height */
+  height: 70%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/*About*/
+.about {
+  background: rgb(213, 213, 214);
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.vid-desc {
+  display: inline-block;
+  padding-left: 5rem;
+}
+/*Contact Form*/
+
+.text-fields {
+  display: grid;
+  grid-template-areas:
+    "name name"
+    "email email"
+    "subject subject"
+    "phone phone"
+    "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.name-input {
+  grid-area: name;
+}
+
+.subject-input {
+  grid-area: subject;
+}
+
+.email-input {
+  grid-area: email;
+}
+
+.phone-input {
+  grid-area: phone;
+}
+
+.message-input {
+  grid-area: message;
+  height: 100px;
+}
+
+.text-input {
+  padding: 0.5rem 1rem;
+}
+
+/*Footer*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #212529;
+  color: white;
+  text-align: center;
+}
