@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded',
+            function()
+            {
+                let correct = document.querySelector(".true")
+                let incorrect = document.querySelectorAll(".false")
+                let message = document.querySelector("#message")
+
+                correct.addEventListener('click',function()
+                {
+                correct.style.backgroundColor = 'green'
+                message.innerHTML = "Correct!"
+                });
+                // for the wrong answer
+                for ( let i = 0; i < incorrect.length; i++)
+                {
+                    incorrect[i].addEventListener('click',
+                    function()
+                    {
+                    incorrect[i].style.backgroundColor = 'red'
+                    message.innerHTML = "Incorrect"
+                    })
+                }
+
+                // open ended question
+
+                document.querySelector('#btn').addEventListener("click", function(){
+                    let input = document.querySelector('input');
+                    let message2 = document.querySelector('#message2');
+                    if(input.value == 'Ottawa')
+                    {
+                        input.style.backgroundColor = 'green'
+                        message2.innerHTML = 'Correct!'
+
+                    }
+                    else
+                    {
+                        input.style.backgroundColor = 'red'
+                        message2.innerHTML = 'Incorrect'
+                    }
+                })
+            });
+
+
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                    <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+                    <button class = "false">6 people per 1 sheep</button>
+                    <button class = "false">3 people per 1 sheep</button>
+                    <button class = "false">1 person per 1 sheep</button>
+                    <button class = "false"> 1 person per 3 sheep</button>
+                    <button class ="true">1 person per 6 sheep</button>
+                    <p id='message'></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the capital of Canada?</h3>
+                <input type = 'text'> </input>
+                <button id = 'btn'>Submit</button>
+                <p id = 'message2'></p>
+            </div>
+
+        </div>
+    </body>
+</html>
