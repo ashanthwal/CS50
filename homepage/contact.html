@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  
+  <!--CSS-->
+  <link href="styles.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">CS50</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./work.html">My work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+       
+      </ul>
+    </div>
+  </nav>
+  <!--Contact Form-->
+  <section id="contact-a" class="text-center py-3">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="bottom-line"></div>
+      <p class="lead">Let's connect and create something beautiful..</p>
+      <form method="POST" >
+        <div class="text-fields">
+          <input
+            type="text"
+            class="text-input name-input"
+            placeholder="Name"
+            name="name"
+          />
+          <input
+            type="text"
+            class="text-input subject-input"
+            placeholder="Subject"
+            name="subject"
+          />
+          <input
+            type="email"
+            class="text-input email-input"
+            placeholder="Email Address"
+            name="email"
+          />
+          <input
+            type="text"
+            class="text-input phone-input"
+            placeholder="Phone Number"
+            name="phone"
+          />
+          <textarea
+            class="text-input message-input"
+            placeholder="Enter Message"
+            name="message"
+          ></textarea>
+          <div class="my-2">    
+          </div>
+        </div>
+        <button type="submit" class="btn-dark">Submit</button>
+      </form>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer>
+    <p>Ash Anthwal<br>
+    <a href="mailto:ashanthwal@gmail.com">ashanthwal@gmail.com</a></p>
+  </footer>
+
+
+
+<!--Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  
+</body>
+</html>
